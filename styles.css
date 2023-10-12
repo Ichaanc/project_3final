@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,300&family=Roboto:wght@100&family=Sedgwick+Ave+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+
+*,
+*::before, 
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+body,
+html {
+ 
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+p {
+    margin: 0;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+::-webkit-scrollbar-track {
+    background: linear-gradient( to right, #1A87BD, #D498CE);
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgb(60, 205, 241);
+}
+
+
+
+*{
+    
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+.iconLogo{
+    height: 70px;
+    width:90px;
+}
+.logospliff{
+    font-family: 'Titan One', sans-serif;
+    font-size: 40px!important;
+    filter: drop-shadow( 1rem 0 0.5rem black );
+}
+
+
+.carouselCaption{
+    filter: drop-shadow( 1rem 0 0.5rem black );
+}
+
+
+.navbar, .offcanvas{
+    background: linear-gradient( to right, #1A87BD, #D498CE);
+    
+}
+
+.navbar .navbar-nav .nav-link{
+color: yellow;
+
+}
+
+
+
+/* POKEDEX SECTION */
+#bug{
+    background-color: #94BC4A;
+    color: white;
+}
+#dark{
+    background-color: #736C75 ;
+    color: white;
+}
+#dragon{
+    background-color: #6A7BAF ;
+    color: white;
+}
+#electric{
+    background-color: #E5C531 ;
+    color: white;
+}
+#fairy{
+    background-color:#E397D1 ;
+    color: white;
+}
+#fighting{
+    background-color: #CB5F48 ;
+    color: white;
+}
+#fire{
+    background-color: #EA7A3C;
+    color: white; 
+}
+#flying{
+    background-color: #7DA6DE ;
+    color: white;
+}
+#ghost{
+    background-color: #846AB6 ;
+    color: white;
+}
+#grass{
+    background-color: #71C558 ;
+    color: white;
+}
+
+#ground{
+    background-color: #CC9F4F ;
+    color: white;
+}
+#ice{
+    background-color: #70CBD4;
+    color: white;
+}
+#normal{
+    background-color: #AAB09F ;
+    color: white;
+}
+#poison{
+    background-color: #B468B7 ;
+    color: white;
+}
+#psychic{
+    background-color: #E5709B ;
+    color: white;
+}
+#rock{
+    background-color: #B2A061 ;
+    color: white;
+}
+#steel{
+    background-color: #89A1B0 ;
+    color: white;
+}
+#water{
+    background-color:#539AE2 ;
+    color: white;
+}
+
+.colorBg{
+  background: linear-gradient( to right, #1A87BD, #D498CE);
+}
+
+#namee{
+    filter: drop-shadow( 1rem 0 0.5rem black );
+}
+
+
+
+.buttonHover:hover{
+    transform: scale(1.1);
+    background-color: rgb(241, 244, 245)!important;
+    color: rgb(12, 12, 12)!important;
+}
+
+
+
+/* CardBackground */
+
+#card-fire{
+    background: url(card/fire.jpg);
+    background-position: center;
+    background-size: contain;
+}
+#card-bug{
+    background: url(card/bug.jpg);
+    background-position: center;
+    background-size: contain;
+}
+#card-dark{
+    background: url(card/dark.jpg);
+    background-position: center;
+    background-size: contain;
+}
+#card-dragon{
+    background: url(card/dragon.jpg);
+    background-position: center;
+    background-size: contain;
+}
+#card-electric{
+    background: url(card/electric.jpg);
+    background-position: center;
+    background-size: contain;
+}
+#card-fairy{
+    background: url(card/fairy.jpg);
+    background-position: center;
+    background-size: contain;
+}
+#card-fighting{
+    background: url(card/fighting.jpg);
+    background-position: center;
+    background-size: contain;
+}
+#card-flying{
+    background: url(card/flying.jpg);
+    background-position: center;
+    background-size: contain;
+}
+#card-grass{
+    background: url(card/grass.jpg);
+    background-position: center;
+    background-size: contain;
+}
+#card-ground{
+    background: url(card/ground.jpg);
+    background-position: center;
+    background-size: contain;
+}
+#card-ice{
+    background: url(card/ice.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+#card-poison{
+    background: url(card/poison.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+#card-psychic{
+    background: url(card/psychic.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+#card-rock{
+    background: url(card/rock.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+#card-steel{
+    background: url(card/steel.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+#card-water{
+    background: url(card/water.jpg);
+    background-position: center;
+    background-size: contain;
+}
+#card-normal{
+    background: url(card/normal.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+#card-ghost{
+    background: url(card/ghost.jpg);
+    background-position: center;
+    background-size: contain;
+}
+
+/* CardBackground END*/
+
+/* CARD ANIMATION */
+.card:hover {
+    animation: bounce 0.5s linear;
+}
+
+@keyframes bounce {
+    20% {
+        transform: translateY(-6px);
+    }
+    40% {
+        transform: translateY(0px);
+    }
+
+    80% {
+        transform: translateY(-2px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* CARD ANIMATION END*/ 
+
+.textZoom:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.aboutImg{
+    height: 75%;
+    width:50%;
+    filter: drop-shadow( 1rem 0 0.5rem black );
+}
+.aboutImglogo{
+    height: auto;
+    width:75%;
+}
+
+
+.aboutButton{
+    background: linear-gradient( to right, #0646f5, #D498CE);
+    color: rgb(39, 210, 216);
+   
+    
+}
+.aboutButton:hover{
+    background: rgb(14, 206, 231);
+    background-color: rgb(10, 191, 247);
+    color: rgb(17, 214, 116);
+}
+
+
+@media (max-width:991px) {
+    body, html {
+        font-size: 12px;
+    }
+    .aboutImg{
+        height: 100%;
+        width:100%;
+}
+.aboutImglogo{
+    display: none;
+}
+}
+@media (max-width:767px) {
+    body, html {
+        font-size: 15px;
+    }
+ 
+}
+
+@media (max-width:590px) {
+    body, html {
+        font-size: 10px;
+    }
+    #switch{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .aboutImg{
+        height: 50%;
+        width:50%;
+        
+}
+.aboutImglogo{
+    display: none;
+}
+}
