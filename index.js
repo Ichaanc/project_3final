@@ -119,11 +119,11 @@ function getPokemon(e) {
     <div class="row">
       <div class="col-6">
         <dt>Height</dt>
-        <dd>• 0.${data.height}m</dd>
+        <dd>• ${Math.round(data.height / 3.048)} ft</dd>
       </div>
       <div class="col-6">
         <dt>Weight</dt>
-        <dd>• ${data.weight}kg</dd>
+        <dd>• ${(data.weight / 10)} kg</dd>
       </div>
     </div>
 

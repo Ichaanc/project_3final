@@ -67,9 +67,9 @@ for (let i = 1; i <= 100; i++){
             <div class="col-6">  
                    <p class="text-white fw-bold text-center">INFO</p>
                     <dt class="text-white ms-3">Height</dt>
-                    <dd class="text-white ms-3">• 0.${data.height}m</dd>
+                    <dd class="text-white ms-3">• ${Math.round(data.height / 3.048)} ft</dd>
                     <dt class="text-white ms-3">Weight</dt>
-                    <dd class="text-white ms-3">• ${data.weight}kg</dd>
+                    <dd class="text-white ms-3">• ${(data.weight / 10)} kg</dd>
             
             </div>
           
