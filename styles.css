@@ -354,3 +354,23 @@ color: yellow;
     display: none;
 }
 }
+
+
+#search{
+padding: 10px 10px;
+border-radius: 10px;
+border-color: gold;
+color: #ffffff;
+background-color: #1A87BD;
+background: #78a7ac;
+}
+
+#search:hover{
+    padding: 10px 10px;
+    border-radius: 10px;
+    border-color: rgb(122, 224, 112);
+    color: #78a7ac;
+    background-color: #1A87BD;
+    background: #feffff;
+    transform: scale(1.1);
+    }
