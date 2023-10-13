@@ -95,7 +95,7 @@ function getPokemon(e) {
 <br>
 
 
-  <div class="bg-secondary opacity-75 border round">
+  <div class="bg-secondary opacity-75 border rounded">
     <p class="fw-bold text-center mt-3 pb-1">INFORMATION</p>
     <div class="row">
       <div class="col-6">
@@ -124,7 +124,7 @@ function getPokemon(e) {
 
     <hr />
 
-    <div class="row text-center bg-secondary opacity-75 border round">
+    <div class="row text-center bg-secondary opacity-75 border rounded">
       <p class="fw-bold text-center mt-3">STATUS</p>
 
       <div class="col-4">

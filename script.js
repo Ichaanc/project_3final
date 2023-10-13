@@ -42,7 +42,7 @@ for (let i = 1; i <= 100; i++){
           <div class="card-body mt-5">
 
 
-            <h4 class="card-title text-white p-3 text-center border round ">
+            <h4 class="card-title text-white p-3 text-center border rounded-5 ">
                   <p 
                   class="text-uppercase  fw-bolder  border-1 fs-2" 
                   id="namee">
@@ -50,9 +50,9 @@ for (let i = 1; i <= 100; i++){
                   <span class="ps-2 pe-2 bg-secondary opacity-75 border round">NAME</span>
             </h4>
 
-            <div class="card-text bg-secondary opacity-75 border round">
+            <div class="card-text bg-secondary opacity-75 border rounded">
 
-            <div class="row mt-2 pb-2">
+            <div class="row mt-2 pb-2 ">
             <div class="col-6">  
                    <p class="text-white fw-bold text-center">INFO</p>
                     <dt class="text-white ms-3">Height</dt>
