@@ -268,8 +268,9 @@ color: yellow;
 /* CardBackground END*/
 
 /* CARD ANIMATION */
-.card:hover {
+#movePokemon:hover {
     animation: bounce 0.5s linear;
+    transform: scale(1.1);
 }
 
 @keyframes bounce {
@@ -289,6 +290,8 @@ color: yellow;
 }
 
 /* CARD ANIMATION END*/ 
+
+
 
 .textZoom:hover{
     transform: scale(1.1);

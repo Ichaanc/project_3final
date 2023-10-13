@@ -164,25 +164,24 @@ function getPokemon(e) {
       removeButtons.forEach((remove)=> {
       remove.addEventListener("click", (event)=> {
       event.target.parentElement.remove();
-      alert(`remove`);
+      swal({
+        title: "POKEMON REMOVE",
+        text: "Search info deleted",
+        icon: "success",
+        button: "Okay",
+      });
       });
       });
     })
     .catch((err) => {
-      document.querySelector(".pokemonBox").innerHTML += `
-      <div class="col-4">
-      <button class="remove">❌</button>
-      <h4>Pokemon not found 😞</h4>
-      </div>`;
+  
+      swal({
+        title: "🚫UNKNOWN🚫",
+        text: "Pokemon Not Found‼️",
+        icon: "error",
+        button: "Try Again!",
+      });
 
-      console.log("Pokemon not found", err);
-      const removeButtons = document.querySelectorAll(".remove");
-      removeButtons.forEach((remove)=> {
-      remove.addEventListener("click", (event)=> {
-      event.target.parentElement.remove();
-      alert(`remove`);
-      });
-      });
     });
 
   

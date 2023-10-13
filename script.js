@@ -1,4 +1,4 @@
-for (let i = 1; i <= 500; i++){
+for (let i = 1; i <= 100; i++){
 
     fetch(`https://pokeapi.co/api/v2/pokemon/${i}`)
     .then((response) => response.json())
@@ -33,6 +33,7 @@ for (let i = 1; i <= 500; i++){
 
                           <img
                             class="card-img-top img-fluid"
+                            id="movePokemon"
                             src="${data.sprites.other["home"].front_default}"
                             alt="Pokemon name"
                             style="width: 100%"/>
