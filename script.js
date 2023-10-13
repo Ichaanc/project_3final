@@ -47,7 +47,18 @@ for (let i = 1; i <= 100; i++){
                   class="text-uppercase  fw-bolder  border-1 fs-2" 
                   id="namee">
                   ${(data.name)}</p>
-                  <span class="ps-2 pe-2 bg-secondary opacity-75 border round">NAME</span>
+
+
+                  <a 
+                  href="https://pokemondb.net/pokedex/${(data.name)}" 
+                  target="_blank" 
+                  class="btn text-center buttonHover  border border-light border-1 shadow-lg mt-2"  
+                  id="${data.types[0].type.name}">
+                  NAME
+              </a>
+
+
+
             </h4>
 
             <div class="card-text bg-secondary opacity-75 border rounded">

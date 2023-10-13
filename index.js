@@ -1,3 +1,11 @@
+let names = document.querySelector("#pokemonName");
+names.addEventListener('keypress',(e)=> {
+  if(e.key === "Enter"){
+    getPokemon(e);
+  }
+})
+
+
 document.querySelector("#search").addEventListener("click", getPokemon);
 
 function capitalizeFirstLetter(string) {
@@ -21,11 +29,22 @@ function getPokemon(e) {
   <a class="btn remove text-end bg-transparent border-transparent">❌</a>
 
   <!-- section 1  -->
-  <div class="col-12 col-md-4 col-lg-4 text-white">
+  <div class="col-12 col-md-4 col-lg-4 text-white text-center">
     <img src="${data.sprites.other["home"].front_default}" class="img-fluid "
     alt="Pokemon name" />
     <h1 class="text-center text-uppercase  fw-bolder  border-1 fs-2" id="namee">
     ${capitalizeFirstLetter(data.name)}</h1>
+
+
+    <a 
+    href="https://pokemondb.net/pokedex/${(data.name)}" 
+    target="_blank" 
+    class="btn text-center buttonHover  border border-light border-1 shadow-lg mt-2"  
+    id="${data.types[0].type.name}">
+    NAME
+</a>
+
+
   </div>
 
   <!-- section 1 END -->
