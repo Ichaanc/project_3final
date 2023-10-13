@@ -21,7 +21,7 @@ function getPokemon(e) {
   <a class="btn remove text-end bg-transparent border-transparent">❌</a>
 
   <!-- section 1  -->
-  <div class="col-4 text-white">
+  <div class="col-12 col-md-4 col-lg-4 text-white">
     <img src="${data.sprites.other["home"].front_default}" class="img-fluid "
     alt="Pokemon name" />
     <h1 class="text-center text-uppercase  fw-bolder  border-1 fs-2" id="namee">
@@ -32,7 +32,7 @@ function getPokemon(e) {
 
   <!-- section 2  -->
 
-  <div class="col-4 text-center text-white">
+  <div class="col-6 col-md-4 col-lg-4 text-center text-white">
     <h2 class="text-center">Version</h2>
     <div class="row">
       <div class="col-12">
@@ -90,7 +90,7 @@ function getPokemon(e) {
 
   <!-- section 2 END -->
 
-  <div class="col-4 text-center text-white ">
+  <div class="col-6 col-md-4 col-lg-4 text-center text-white ">
     
 <br>
 
@@ -141,7 +141,7 @@ function getPokemon(e) {
         <dd>• ${data.stats[1].base_stat}</dd>
         <br />
         <br />
-        <dt>Sp.Attack</dt>
+        <dt>Speed.Atk</dt>
         <dd>• ${data.stats[3].base_stat}</dd>
       </div>
 
@@ -150,7 +150,7 @@ function getPokemon(e) {
         <dd>• ${data.stats[2].base_stat}</dd>
         <br />
         <br />
-        <dt>Sp.Defense</dt>
+        <dt>Speed.Def</dt>
         <dd>• ${data.stats[4].base_stat}</dd>
       </div>
     </div>
