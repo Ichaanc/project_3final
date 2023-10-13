@@ -159,6 +159,9 @@ function getPokemon(e) {
 
 </div>
 `;
+
+
+      document.querySelector("#pokemonName").value ="";
     
       const removeButtons = document.querySelectorAll(".remove");
       removeButtons.forEach((remove)=> {
