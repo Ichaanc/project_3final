@@ -184,6 +184,7 @@ function getPokemon(e) {
         icon: "error",
         button: "Try Again!",
       });
+      document.querySelector("#pokemonName").value ="";
 
     });
 
