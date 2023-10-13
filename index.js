@@ -88,7 +88,7 @@ function getPokemon(e) {
         
         <img src="typelogo/${data.types[0].type.name}.png"
         style="width:100px" 
-        class="border border-light border-1 rounded-circle"
+        class="border border-light border-1 rounded-circle shadow-lg"
         alt="">
        
 

@@ -308,7 +308,7 @@ color: yellow;
 
 
 .aboutButton{
-    background: linear-gradient( to right, #0646f5, #D498CE);
+    background: linear-gradient( to right, #224ec7, #0e8fe6);
     color: rgb(39, 210, 216);
    
     
@@ -369,7 +369,7 @@ border-radius: 10px;
 border-color: gold;
 color: #ffffff;
 background-color: #1A87BD;
-background: #78a7ac;
+background: #2c80df;
 }
 
 #search:hover{
