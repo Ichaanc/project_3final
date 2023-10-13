@@ -39,10 +39,12 @@ function getPokemon(e) {
         <div class="row">
           <div class="col-6 d-flex align-items-center">
             <img style="width:200px"
+            class="img-fluid "
             src="${data.sprites.other["dream_world"].front_default}" alt="">
           </div>
           <div class="col-6 d-flex align-items-center">
             <img style="width:200px"
+            class="img-fluid "
             src="${data.sprites.other["official-artwork"].front_default}"
             alt="">
           </div>
