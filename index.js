@@ -1,3 +1,6 @@
+
+// USE ENTER KEY TO ENTER
+
 let names = document.querySelector("#pokemonName");
 names.addEventListener('keypress',(e)=> {
   if(e.key === "Enter"){
@@ -5,16 +8,33 @@ names.addEventListener('keypress',(e)=> {
   }
 })
 
+// USE ENTER KEY TO ENTER END
+
+
+// ON CLICK TO SEARCH POKEMON
 
 document.querySelector("#search").addEventListener("click", getPokemon);
 
-function capitalizeFirstLetter(string) {
-  return string.toUpperCase();
+
+// ON CLICK TO SEARCH POKEMON
+
+
+
+// CREAT A FUNCTION TO UPPERCASE
+function capitalize(string) {
+  return string.toUpperCase()
 }
 
+
+
+
+// CREAT A FUNCTION TO LOWERCASE
 function lowerCaseName(string) {
   return string.toLowerCase();
 }
+
+
+// CREATE A FUNCTION TO FETCH API IN BUTTON
 
 function getPokemon(e) {
   const name = document.querySelector("#pokemonName").value;
@@ -33,7 +53,7 @@ function getPokemon(e) {
     <img src="${data.sprites.other["home"].front_default}" class="img-fluid "
     alt="Pokemon name" />
     <h1 class="text-center text-uppercase  fw-bolder  border-1 fs-2" id="namee">
-    ${capitalizeFirstLetter(data.name)}</h1>
+    ${capitalize(data.name)}</h1>
 
 
     <a 
@@ -66,6 +86,9 @@ function getPokemon(e) {
             class="img-fluid "
             src="${data.sprites.other["official-artwork"].front_default}"
             alt="">
+
+
+
           </div>
         </div>
 
@@ -179,7 +202,6 @@ function getPokemon(e) {
 </div>
 `;
 
-
       document.querySelector("#pokemonName").value ="";
     
       const removeButtons = document.querySelectorAll(".remove");
@@ -194,6 +216,10 @@ function getPokemon(e) {
       });
       });
       });
+
+    document.querySelector("#search").scrollIntoView(false);
+
+
     })
     .catch((err) => {
   
@@ -207,12 +233,9 @@ function getPokemon(e) {
 
     });
 
-  
+
+    document.querySelector("#search").scrollIntoView(false);
 
   e.preventDefault();
 }
 
-function capitalize(string) {
-    return string.toUpperCase()
-  }
-  
