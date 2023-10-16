@@ -66,24 +66,55 @@ for (let i = 152;  i <= 251; i++){
             <div class="row mt-2 pb-2 ">
             <div class="col-6">  
                    <p class="text-white fw-bold text-center">INFO</p>
-                    <dt class="text-white ms-3">Height</dt>
-                    <dd class="text-white ms-3">• ${Math.round(data.height / 3.048)} ft</dd>
-                    <dt class="text-white ms-3">Weight</dt>
-                    <dd class="text-white ms-3">• ${(data.weight / 10)} kg</dd>
-            
+
+             <div class="row border-end">
+                 <div class="col-6 ">
+                    <dt class="text-white ms-2 textSize">Height</dt>
+                    <dd class="text-white ms-2 ">• ${Math.round(data.height / 3.048)}ft</dd>
+                    <dt class="text-white ms-2 textSize">Weight</dt>
+                    <dd class="text-white ms-2">• ${(data.weight / 10)}kg</dd>
+                    </div>
+
+                  <div class="col-6">
+                  <dt class="text-white ms-3">HP</dt>
+                  <dd class="text-white ms-3">• ${data.stats[0].base_stat}</dd>
+                  <dt class="text-white ms-3">Speed</dt>
+                  <dd class="text-white ms-3">• ${data.stats[5].base_stat}</dd>
+
+
+                   </div>
+                 </div>
+
             </div>
           
             <div class="col-6">
-                    <p class="text-white fw-bold text-center">STATUS</p>
-                    <dt class="text-white ms-3">Attack</dt>
+
+
+            <p class="text-white fw-bold text-center">STATUS</p>
+            <div class="row">
+            <div class="col-6">
+                    <dt class="text-white ms-1">Attack</dt>
                     <dd class="text-white ms-3">• ${data.stats[1].base_stat}</dd>
-                    <dt class="text-white ms-3">Defense</dt>
+                    <dt class="text-white ms-1">Defense</dt>
                     <dd class="text-white ms-3">• ${data.stats[2].base_stat}</dd>
+               </div>
+
+             <div class="col-6">
+             <dt class="text-white ms-3">S.Atk</dt>
+                    <dd class="text-white ms-3">• ${data.stats[3].base_stat}</dd>
+                    <dt class="text-white ms-3">S.Def</dt>
+                    <dd class="text-white ms-3">• ${data.stats[4].base_stat}</dd>
+
+              </div>
+            </div>
+
+
+                    
+                   
                 
             </div>
             
         </div>
-        
         
         
 

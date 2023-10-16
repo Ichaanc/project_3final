@@ -51,6 +51,7 @@ function getPokemon(e) {
   <!-- section 1  -->
   <div class="col-12 col-md-4 col-lg-4 text-white text-center">
     <img src="${data.sprites.other["home"].front_default}" class="img-fluid "
+    id="movePokemon"
     alt="Pokemon name" />
     <h1 class="text-center text-uppercase  fw-bolder  border-1 fs-2" id="namee">
     ${capitalize(data.name)}</h1>

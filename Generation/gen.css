@@ -267,9 +267,15 @@ color: yellow;
 /* CardBackground END*/
 
 /* CARD ANIMATION */
+
+#movePokemon{
+    filter: drop-shadow( 1rem 0 0.5rem black );
+}
 #movePokemon:hover {
     animation: bounce 0.5s linear;
     transform: scale(1.1);
+    filter: drop-shadow( 3rem 0 3rem black );
+   
 }
 
 @keyframes bounce {
@@ -480,3 +486,5 @@ background: #2c80df;
     color: white;
     font-weight: 600;
 }
+
+
