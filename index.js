@@ -1,3 +1,6 @@
+
+// USE ENTER KEY TO ENTER
+
 let names = document.querySelector("#pokemonName");
 names.addEventListener('keypress',(e)=> {
   if(e.key === "Enter"){
@@ -5,16 +8,33 @@ names.addEventListener('keypress',(e)=> {
   }
 })
 
+// USE ENTER KEY TO ENTER END
+
+
+// ON CLICK TO SEARCH POKEMON
 
 document.querySelector("#search").addEventListener("click", getPokemon);
 
-function capitalizeFirstLetter(string) {
-  return string.toUpperCase();
+
+// ON CLICK TO SEARCH POKEMON
+
+
+
+// CREAT A FUNCTION TO UPPERCASE
+function capitalize(string) {
+  return string.toUpperCase()
 }
 
+
+
+
+// CREAT A FUNCTION TO LOWERCASE
 function lowerCaseName(string) {
   return string.toLowerCase();
 }
+
+
+// CREATE A FUNCTION TO FETCH API IN BUTTON
 
 function getPokemon(e) {
   const name = document.querySelector("#pokemonName").value;
@@ -33,7 +53,7 @@ function getPokemon(e) {
     <img src="${data.sprites.other["home"].front_default}" class="img-fluid "
     alt="Pokemon name" />
     <h1 class="text-center text-uppercase  fw-bolder  border-1 fs-2" id="namee">
-    ${capitalizeFirstLetter(data.name)}</h1>
+    ${capitalize(data.name)}</h1>
 
 
     <a 
@@ -53,7 +73,7 @@ function getPokemon(e) {
 
   <div class="col-6 col-md-4 col-lg-4 text-center text-white">
     <h2 class="text-center">Version</h2>
-    <div class="row ">
+    <div class="row">
       <div class="col-12">
         <div class="row">
           <div class="col-6 d-flex align-items-center">
@@ -61,9 +81,11 @@ function getPokemon(e) {
             class="img-fluid "
             src="${data.sprites.other["dream_world"].front_default}" alt="">
           </div>
-          <div class="col-6 d-flex align-items-center evolution">
-           
-
+          <div class="col-6 d-flex align-items-center">
+            <img style="width:200px"
+            class="img-fluid "
+            src="${data.sprites.other["official-artwork"].front_default}"
+            alt="">
 
 
 
@@ -195,90 +217,9 @@ function getPokemon(e) {
       });
       });
 
+    document.querySelector("#search").scrollIntoView(false);
 
 
-// FETCH SPECIES TO GET EVOLUTION
-
-
-fetch(`https://pokeapi.co/api/v2/pokemon-species/${data.name}`)
-.then((response) => response.json())
-.then((data) => {
-  
-
-let PokemonNameEvolve = data.evolution_chain.url;
-PokemonNameEvolve.json =
-
-fetch(`${PokemonNameEvolve}`)
-.then((response) => response.json())
-.then((result) => {
- 
-let level1 = result.chain.species.name;
-let level2 = result.chain.evolves_to[0].species.name;
-let level3 = result.chain.evolves_to[0].evolves_to[0].species.name;
-
-
-
-
-// level1 start
-fetch(`https://pokeapi.co/api/v2/pokemon/${level1}`)
-.then((response) => response.json())
-.then((data) => {
-  document.querySelector(".evolution").innerHTML += `
-
-  <img style="width:200px"
-  class="img-fluid "
-  src="${data.sprites.other["official-artwork"].front_default}"
-  alt="">
-  <p>${data.name}</p>
-`;
-})
-
-// level2 start
-
-fetch(`https://pokeapi.co/api/v2/pokemon/${level2}`)
-.then((response) => response.json())
-.then((data) => {
-  document.querySelector(".evolution").innerHTML += `
-
-  <img style="width:200px"
-  class="img-fluid "
-  src="${data.sprites.other["official-artwork"].front_default}"
-  alt="">
-  <p>${data.name}</p>
-`;
-})
-
-// level3 start
-
-fetch(`https://pokeapi.co/api/v2/pokemon/${level3}`)
-.then((response) => response.json())
-.then((data) => {
-  document.querySelector(".evolution").innerHTML += `
-
-  <img style="width:200px"
-  class="img-fluid "
-  src="${data.sprites.other["official-artwork"].front_default}"
-  alt="">
-  <p>${data.name}</p>
-`;
-})
-
-// level 3 end
-
-})
-
-// IF POKEMON HAS NO EVOLUTION 
-
-.catch((err) => {
-  
-  document.querySelector(".evolution").innerHTML = `
-  <p>NO EVOLUTION</p>`;
-
-});
-
-
-
-} );
     })
     .catch((err) => {
   
@@ -292,12 +233,9 @@ fetch(`https://pokeapi.co/api/v2/pokemon/${level3}`)
 
     });
 
-  
+
+    document.querySelector("#search").scrollIntoView(false);
 
   e.preventDefault();
 }
 
-function capitalize(string) {
-    return string.toUpperCase()
-  }
-  
