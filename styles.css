@@ -290,11 +290,26 @@ color: yellow;
 
 /* CARD ANIMATION END*/ 
 
+.textZoom{
+    background: linear-gradient( to right, #224ec7, #0e8fe6);
+    color: whitesmoke;
+    border-radius: 10px;
+    border-width: 1px;
+    border-color: whitesmoke;
+    border-style: solid;
+    
 
+}
 
 .textZoom:hover{
     transform: scale(1.1);
     cursor: pointer;
+    background: whitesmoke;
+    color:#2b60f0;
+    border-radius: 20px;
+    border-color: #0e8fe6;
+    border-style: solid;
+    border-width: 5px;
 }
 .aboutImg{
     height: 75%;
@@ -480,3 +495,4 @@ background: #2c80df;
     color: white;
     font-weight: 600;
 }
+
