@@ -1,212 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="Icon/">
-    <link rel="icon" type="image/png" sizes="32x32" href="Icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="Icon/favicon-16x16.png">
-    <link rel="manifest" href="Icon/site.webmanifest">
-<!-- Favicon End -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="Icon/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Icon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Icon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="Icon/site.webmanifest" />
+    <!-- Favicon End -->
 
     <title>PokéWeb</title>
 
-     <!-- font awesome 5 cdn -->
-     <link
-     rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-   />
+    <!-- font awesome 5 cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
 
-
-    <link rel="stylesheet" href="styles.css"> 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-</head>
-<body class="colorBg">
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="colorBg">
     <!-- Navar -->
 
     <header>
-      <nav class="navbar navbar-expand-lg pb-3 pt-3 shadow-lg fixed-top" data-bs-theme="dark" >
-          <div class="container-fluid">
-            <img class="iconLogo ms-3" src="pokedex-png.png" alt="">
-            <a class="navbar-brand ms-3 fs-1 text-warning logospliff" href="#">PokéWeb</a>
-            <button class="navbar-toggler me-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-              <div class="offcanvas-header text-center">
-                <h5 class="offcanvas-title mt-3 ms-5 ps-5 text-warning logospliff" id="offcanvasExampleLabel">MENU</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <ul class="navbar-nav ms-3" >
-                <li class="nav-item">
-                  <a class="nav-link active fw-bold fs-5 text-uppercase" aria-current="page" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle fs-5 text-uppercase" href="#" role="button" data-bs-toggle="dropdown" >
-                    POKEDEX
-                  </a>
-                  <ul class="dropdown-menu me-5 pe-5 ms-4">
-                    <li><a class="dropdown-item" href="Generation/gen1.html">Generation 1</a></li>
-                    <li><a class="dropdown-item" href="Generation/gen2.html">Generation 2</a></li>
-                    <li><a class="dropdown-item" href="Generation/gen3.html">Generation 3</a></li>
-                    <li><a class="dropdown-item" href="Generation/gen4.html">Generation 4</a></li>
-                    <li><a class="dropdown-item" href="Generation/gen5.html">Generation 5</a></li>
-                    <li><a class="dropdown-item" href="Generation/gen6.html">Generation 6</a></li>
-                    <li><a class="dropdown-item" href="Generation/gen7.html">Generation 7</a></li>
-                    <li><a class="dropdown-item" href="Generation/gen8.html">Generation 8</a></li>
-                    <li><a class="dropdown-item" href="Generation/gen9.html">Generation 9</a></li>
-                  </ul>
-                </li>     
-              </ul>
+      <nav
+        class="navbar navbar-expand-lg pb-3 pt-3 shadow-lg fixed-top"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <img class="iconLogo ms-3" src="pokedex-png.png" alt="" />
+          <a class="navbar-brand ms-3 fs-1 text-warning logospliff" href="#"
+            >PokéWeb</a
+          >
+          <button
+            class="navbar-toggler me-3"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample"
+            aria-controls="offcanvasExample"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-start"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header text-center">
+              <h5
+                class="offcanvas-title mt-3 ms-5 ps-5 text-warning logospliff"
+                id="offcanvasExampleLabel"
+              >
+                MENU
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
             </div>
+            <ul class="navbar-nav ms-3">
+              <li class="nav-item">
+                <a
+                  class="nav-link active fw-bold fs-5 text-uppercase"
+                  aria-current="page"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle fs-5 text-uppercase"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  POKEDEX
+                </a>
+                <ul class="dropdown-menu me-5 pe-5 ms-4">
+                  <li>
+                    <a class="dropdown-item" href="Generation/gen1.html"
+                      >Generation 1</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Generation/gen2.html"
+                      >Generation 2</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Generation/gen3.html"
+                      >Generation 3</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Generation/gen4.html"
+                      >Generation 4</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Generation/gen5.html"
+                      >Generation 5</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Generation/gen6.html"
+                      >Generation 6</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Generation/gen7.html"
+                      >Generation 7</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Generation/gen8.html"
+                      >Generation 8</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="Generation/gen9.html"
+                      >Generation 9</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </header>
-
+        </div>
+      </nav>
+    </header>
 
     <!-- NavbarEnd -->
-<br>
-<br>
-<br>
-<br>
-<!-- Hero Section -->
-<section class="position-relative">
-
-    <div id="carouselExampleCaptions" class="carousel slide">
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- Hero Section -->
+    <section class="position-relative">
+      <div id="carouselExampleCaptions" class="carousel slide">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="bg/main_bg.jpg" class="d-block vw-100" alt="...">
+            <img src="bg/main_bg.jpg" class="d-block vw-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <h5 class="display-1 fw-bold pb-5 mb-5 carouselCaption">Complete Pokémon</h5>
-              <p class=" fs-4 pb-3 mb-3 carouselCaption">This is a full list of every Pokémon from all 9 generations of the Pokémon series, along with their main stats.</p>
+              <h5 class="display-1 fw-bold pb-5 mb-5 carouselCaption">
+                Complete Pokémon
+              </h5>
+              <p class="fs-4 pb-3 mb-3 carouselCaption">
+                This is a full list of every Pokémon from all 9 generations of
+                the Pokémon series, along with their main stats.
+              </p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="bg/main_bg.jpg" class="d-block vw-100" alt="...">
+            <img src="bg/main_bg.jpg" class="d-block vw-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <h5 class="display-1 fw-bold pb-5 mb-5 carouselCaption">Complete Pokémon</h5>
-              <p class=" fs-4 pb-3 mb-3 carouselCaption">This is a full list of every Pokémon from all 9 generations of the Pokémon series, along with their main stats.</p>
+              <h5 class="display-1 fw-bold pb-5 mb-5 carouselCaption">
+                Complete Pokémon
+              </h5>
+              <p class="fs-4 pb-3 mb-3 carouselCaption">
+                This is a full list of every Pokémon from all 9 generations of
+                the Pokémon series, along with their main stats.
+              </p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="bg/main_bg.jpg" class="d-block vw-100" alt="...">
+            <img src="bg/main_bg.jpg" class="d-block vw-100" alt="..." />
             <div class="carousel-caption d-none d-md-block">
-              <h5 class="display-1 fw-bold pb-5 mb-5 carouselCaption">Complete Pokémon</h5>
-              <p class=" fs-4 pb-3 mb-3 carouselCaption">This is a full list of every Pokémon from all 9 generations of the Pokémon series, along with their main stats.</p>
+              <h5 class="display-1 fw-bold pb-5 mb-5 carouselCaption">
+                Complete Pokémon
+              </h5>
+              <p class="fs-4 pb-3 mb-3 carouselCaption">
+                This is a full list of every Pokémon from all 9 generations of
+                the Pokémon series, along with their main stats.
+              </p>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-</section>
-<!-- Hero Section END-->
+    </section>
+    <!-- Hero Section END-->
 
-<!-- Landing About Section -->
-<section class="landing_about_section m-5 p-5">
-  <div class="container-fluid">
-    <h1 class="text-white text-center fw-bolder display-1 shadow-sm">The PokéWeb</h1>
-    <div class="row" id="switch">
-      <div class="col-12 col-md-6 col-lg-6 mt-5 pt-5">
-        
-        <div class="row">
-
+    <!-- Landing About Section -->
+    <section class="landing_about_section m-5 p-5">
+      <div class="container-fluid">
+        <h1 class="text-white text-center fw-bolder display-1 shadow-sm">
+          The PokéWeb
+        </h1>
+        <div class="row" id="switch">
+          <div class="col-12 col-md-6 col-lg-6 mt-5 pt-5">
+            <div class="row">
               <div class="col-12 text-start">
-
-                <img class="img-fluid aboutImglogo ms-5 ps-5" src="About/pokedex_top.png" alt="">
-
+                <img
+                  class="img-fluid aboutImglogo ms-5 ps-5"
+                  src="About/pokedex_top.png"
+                  alt=""
+                />
               </div>
 
-              <div class="col-12 text-center   shadow textZoom">
-
-
-                <p class="text-center  fs-5 m-3 ">
-                  The PokéWeb is a Website application that records and provides information about all Pokémon in the world123. It is an illustrated Pokémon encyclopedia that can be used by Trainers1. The Pokédex is organized by their number in the National Pokédex, which is subdivided into regional Pokédex series based on the different generations of Pokémon
+              <div class="col-12 text-center shadow textZoom">
+                <p class="text-center fs-5 m-3">
+                  The PokéWeb is a Website application that records and provides
+                  information about all Pokémon in the world123. It is an
+                  illustrated Pokémon encyclopedia that can be used by
+                  Trainers1. The Pokédex is organized by their number in the
+                  National Pokédex, which is subdivided into regional Pokédex
+                  series based on the different generations of Pokémon
                 </p>
-
               </div>
               <div class="col-12 text-start mt-3">
-                <a href="https://pokemondb.net/pokedex/all" 
-                target="_blank"
-                class="btn aboutButton border text-white">Read More...</a>
+                <a
+                  href="https://pokemondb.net/pokedex/all"
+                  target="_blank"
+                  class="btn aboutButton border text-white"
+                  >Read More...</a
+                >
               </div>
+            </div>
+          </div>
 
+          <div class="col-12 col-md-6 col-lg-6 text-center">
+            <div>
+              <img
+                class="img-fluid aboutImg"
+                src="About/ash_pokedex.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
-          
-            
       </div>
+    </section>
+    <!-- Landing About Section -->
 
+    <!-- VIEW SECTION -->
 
-      <div class="col-12 col-md-6 col-lg-6 text-center">
-
-        <div>
-          <img class="img-fluid aboutImg " src="About/ash_pokedex.png" alt="">
+    <section>
+      <div class="container mb-3">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="text-white text-center fw-bolder display-1 shadow-sm">
+              Search Multiple Pokemon
+            </h1>
+          </div>
         </div>
 
-
-
+        <div class="row pokemonBox"></div>
       </div>
+    </section>
 
+    <!-- VIEW SECTION END-->
 
-    </div>
-  </div>
-</section>
-<!-- Landing About Section -->
-
-
-
-
-<!-- VIEW SECTION -->
-
-<section >
-  <div class="container mb-3">
-
-    <div class="row">
-      <div class="col-12"> <h1 class="text-white text-center fw-bolder display-1 shadow-sm">Search Multiple Pokemon</h1></div>
-    </div>
-   
-        <div class="row pokemonBox">
-         
-        </div>
-
-      
-   </div>
-
-</section>
-
-<!-- VIEW SECTION END-->
-
-
-
-
-
-<!-- SEARCH SECTION -->
-<section>
-
-  <div class="container mb-4">
-    <div class="row">
-      
-        <div class="col-2 col-md-2 col-lg-2">
-
-
-        </div>
+    <!-- SEARCH SECTION -->
+    <section>
+      <div class="container mb-4">
+        <div class="row">
+          <div class="col-2 col-md-2 col-lg-2"></div>
 
           <div class="col-8 col-md-8 col-lg-8 text-center">
             <div class="searchBox">
               <input
-              class="form-control mb-4"
+                class="form-control mb-4"
                 id="pokemonName"
                 type="Pokemon name"
                 placeholder="Pokemon name"
@@ -215,137 +330,162 @@
             </div>
           </div>
 
-          <div class="col-2 col-md-2 col-lg-2">
+          <div class="col-2 col-md-2 col-lg-2"></div>
+        </div>
+      </div>
+    </section>
+    <!-- SEARCH SECTION END-->
 
+    <!-- FOOTER SECTION -->
 
+    <section class="footer-wrapper mt-3 mb-md-0">
+      <div class="container px-5 px-lg-0">
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12">
+            <h5>Website Reference</h5>
+            <ul class="link-widget p-0">
+              <li>
+                <a class="a" href="https://pokemondb.net/" target="_blank"
+                  >PokemonDB</a
+                >
+              </li>
+              <li>
+                <a
+                  class="a"
+                  href="https://www.pokemon.com/us/pokedex"
+                  target="_blank"
+                  >Pokemon.com</a
+                >
+              </li>
+              <li>
+                <a
+                  class="a"
+                  href="https://en.wikipedia.org/wiki/List_of_Pok%C3%A9mon"
+                  target="_blank"
+                  >Wikipedia</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <h5>Resources Links</h5>
+            <ul class="link-widget p-0">
+              <li class="text-decoration-none">
+                <a class="a" href="https://pokeapi.co/" target="_blank"
+                  >Pokemon API</a
+                >
+              </li>
+              <li>
+                <a class="a" href="https://getbootstrap.com/" target="_blank"
+                  >Bootstrap</a
+                >
+              </li>
+              <li>
+                <a class="a" href="https://sweetalert.js.org/" target="_blank"
+                  >Sweetalert</a
+                >
+              </li>
+              <li>
+                <a class="a" href="https://www.youtube.com" target="_blank"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
           </div>
 
-    </div>
-  </div>
+          <div class="col-lg-4 col-md-4 col-12">
+            <h5>Stay Connected</h5>
+            <ul class="social-network d-flex align-items-center p-0">
+              <li>
+                <a
+                  class="a"
+                  href="https://www.facebook.com/Kyle12.12.97"
+                  target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li>
+                <a class="a" href="https://github.com/Ichaanc" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="a"
+                  href="https://vercel.com/ichaancyou"
+                  target="_blank"
+                  ><i class="fab fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="a"
+                  href="https://www.youtube.com/@bryllimyt"
+                  target="_blank"
+                  ><i class="fab fa-youtube"></i
+                ></a>
+              </li>
+            </ul>
 
-</section>
-<!-- SEARCH SECTION END-->
-
-
-
-
-
-
-
-
-
-<!-- FOOTER SECTION -->
-
-
-
-<section class="footer-wrapper mt-3 mb-md-0">
-  <div class="container px-5 px-lg-0">
-    <div class="row">
-     
-      <div class="col-lg-4 col-md-4 col-12">
-        <h5>Website Reference</h5>
-        <ul class="link-widget p-0">
-          <li><a class="a" href="https://pokemondb.net/"
-            target="_blank">PokemonDB</a></li>
-          <li><a class="a" href="https://www.pokemon.com/us/pokedex"
-            target="_blank">Pokemon.com</a></li>
-          <li><a class="a" href="https://en.wikipedia.org/wiki/List_of_Pok%C3%A9mon"
-            target="_blank">Wikipedia</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-4 col-md-4 col-12">
-        <h5>Resources Links</h5>
-        <ul class="link-widget p-0">
-          <li class="text-decoration-none" ><a class="a" href="https://pokeapi.co/"
-            target="_blank">Pokemon API</a></li>
-          <li><a class="a" href="https://getbootstrap.com/"
-            target="_blank">Bootstrap</a></li>
-          <li><a class="a" href="https://sweetalert.js.org/"
-            target="_blank">Sweetalert</a></li>
-          <li><a class="a" href="https://www.youtube.com"
-            target="_blank">Youtube</a></li>
-        </ul>
-      </div>
-
-      <div class="col-lg-4 col-md-4 col-12">
-
-
-
-       
-        <h5>Stay Connected</h5>
-        <ul class="social-network d-flex align-items-center p-0">
-          <li>
-            <a class="a" href="https://www.facebook.com/Kyle12.12.97"
-            target="_blank"><i class="fab fa-facebook-f"></i></a>
-          </li>
-          <li>
-            <a class="a" href="https://github.com/Ichaanc"
-            target="_blank"><i class="fab fa-github"></i></a>
-          </li>
-          <li>
-            <a class="a" href="https://vercel.com/ichaancyou"
-            target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          </li>
-          <li>
-            <a class="a" href="https://www.youtube.com/@bryllimyt"
-            target="_blank"><i class="fab fa-youtube"></i></a>
-          </li>
-        </ul>
-
-
-        <div class="contact-info">
-          <ul class="list-unstyled">
-            <li>
-              <a class="a" href="#"><i class="fa fa-home me-3"></i>No. 00 BUSTOS, BULACAN</a>
-            </li>
-            <li>
-              <a class="a" href="#"><i class="fa fa-phone me-3"></i>+63-123456789</a>
-            </li>
-            <li>
-              <a class="a" href="#"
-                ><i class="fa fa-envelope me-3"></i>christiankylecapistani@gmail.com</a
-              >
-            </li>
-          </ul>
+            <div class="contact-info">
+              <ul class="list-unstyled">
+                <li>
+                  <a class="a" href="#"
+                    ><i class="fa fa-home me-3"></i>No. 00 BUSTOS, BULACAN</a
+                  >
+                </li>
+                <li>
+                  <a class="a" href="#"
+                    ><i class="fa fa-phone me-3"></i>+63-123456789</a
+                  >
+                </li>
+                <li>
+                  <a class="a" href="#"
+                    ><i class="fa fa-envelope me-3"></i
+                    >christiankylecapistani@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-
-
       </div>
+      <div class="container-fluid copyright-section">
+        <p>
+          <small
+            >Copyright
+            <a
+              href="https://project3api-self.vercel.app/"
+              target="_blank"
+              class="text-dark"
+              >@ Project 3 API
+            </a>
+            All Rights Reserved</small
+          >
+        </p>
+      </div>
+    </section>
 
-
-
-      
-    </div>
-  </div>
-  <div class="container-fluid copyright-section">
-    <p><small>Copyright <a  href="https://project3api-self.vercel.app/"
-      target="_blank" class="text-dark">@ Project 3 API </a>  All Rights Reserved</small></p>
-      
-  </div>
-</section>
-
-
-<!-- FOOTER SECTION end-->
-
-
-
-
-
-
+    <!-- FOOTER SECTION end-->
 
     <!-- FrameWorks -->
 
-<!-- SweetAlert end -->
+    <!-- SweetAlert end -->
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<!-- SweetAlert -->
+    <!-- SweetAlert -->
 
-<!-- main js -->
+    <!-- main js -->
     <script src="index.js"></script>
     <!-- main js end-->
 
-<!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
 
     <!-- bootstrap js end -->
-</body>
+  </body>
 </html>
+
