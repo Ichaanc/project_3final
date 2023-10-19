@@ -61,7 +61,7 @@ for (let i = 906; i <= 1017; i++){
                      <img
                           class="card-img-top img-fluid"
                           id="movePokemon"
-                          src="${data.sprites.other["home"].front_default}"
+                          src="${data.sprites.other["official-artwork"].front_default}"
                           alt="Pokemon name"
                           style="width: 100%"/>
 
@@ -197,7 +197,7 @@ for (let i = 906; i <= 1017; i++){
                           <img
                             class="card-img-top img-fluid"
                             id="movePokemon"
-                            src="${data.sprites.other["home"].front_default}"
+                            src="${data.sprites.other["official-artwork"].front_default}"
                             alt="Pokemon name"
                             style="width: 100%"/>
 
